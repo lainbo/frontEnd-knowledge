@@ -11,6 +11,7 @@ import axios from 'axios'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 const columns = [
+  { title: '题号', dataIndex: 'num', width: '80' },
   { title: '题目', dataIndex: 'name' },
   { title: '难度', dataIndex: 'difficulty' }
 ]
