@@ -1,7 +1,12 @@
 [
   {
     "name": "两数之和",
-    "difficulty": "easy",
+    "difficulty": "简单",
     "path": "/001-099/001-两数之和.md"
+  },
+  {
+    "name": "两数相加",
+    "difficulty": "中等",
+    "path": "/001-099/002-两数相加.md"
   }
 ]
