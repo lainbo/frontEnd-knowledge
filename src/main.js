@@ -20,4 +20,8 @@ import Prism from 'prismjs'
 import 'prismjs/components/prism-json'
 VMdPreview.use(vuepressTheme, { Prism })
 
-createApp(App).use(router).use(ArcoVue).use(VMdPreview).mount('#app')
+createApp(App)
+  .use(router)
+  .use(ArcoVue)
+  .use(VMdPreview)
+  .mount('#app')

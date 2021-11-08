@@ -1,6 +1,18 @@
 <template>
-  <div class>
-    <a-table :columns="columns" :data="tableData" :pagination="false" @row-click="seeDetal" />
+  <div class="table_wrapper">
+    <a-table :data="tableData" :pagination="false" @row-click="seeDetal">
+      <template #columns>
+        <a-table-column title="序号" dataIndex="num" width="80" />
+        <a-table-column title="题目" dataIndex="name" />
+        <a-table-column title="难度" dataIndex="difficulty" width="100">
+          <template #cell="{ record }">
+            <span :style="{color:calcDifficulty(record)}">
+              {{record.difficulty}}
+            </span>
+          </template>
+        </a-table-column>
+      </template>
+    </a-table>
   </div>
 </template>
 
@@ -10,11 +22,6 @@ import { onMounted } from '@vue/runtime-core'
 import axios from 'axios'
 import { useRouter } from 'vue-router'
 const router = useRouter()
-const columns = [
-  { title: '题号', dataIndex: 'num', width: '80' },
-  { title: '题目', dataIndex: 'name' },
-  { title: '难度', dataIndex: 'difficulty' }
-]
 const tableData = ref([])
 const getData = async () => {
   const { data } = await axios.get('/static/LeetCodeData/LeetCodeData.json')
@@ -25,10 +32,22 @@ onMounted(() => {
 })
 
 const seeDetal = (val) => {
-  console.log('val: ', val)
   router.push({ name: 'LeetCodeDetails', query: { path: val.path } })
+}
+const calcDifficulty = (row) => {
+  const m = new Map([
+    ['简单', '#00b42a'],
+    ['中等', '#ff7d00'],
+    ['困难', '#f53f3f']
+  ])
+  return m.get(row.difficulty) || '#333'
 }
 </script>
 
 <style lang="scss" scoped>
+.table_wrapper {
+  ::v-deep(.arco-table-tr) {
+    cursor: pointer;
+  }
+}
 </style>

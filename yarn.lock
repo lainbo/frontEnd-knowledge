@@ -16,10 +16,10 @@
   dependencies:
     color "^3.1.3"
 
-"@arco-design/web-vue@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmmirror.com/@arco-design/web-vue/download/@arco-design/web-vue-2.0.3.tgz#dd768bcd3fed863560aaec4808fcaf35a838e4b8"
-  integrity sha1-3XaLzT/thjVgquxICPyvNag45Lg=
+"@arco-design/web-vue@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.npmmirror.com/@arco-design/web-vue/download/@arco-design/web-vue-2.1.0.tgz#795630bd183f3be91afe324261f5620c514439c7"
+  integrity sha1-eVYwvRg/O+ka/jJCYfViDFFEOcc=
   dependencies:
     "@arco-design/color" "^0.4.0"
     b-tween "^0.3.3"
