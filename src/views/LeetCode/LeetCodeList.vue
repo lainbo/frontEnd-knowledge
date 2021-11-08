@@ -19,11 +19,12 @@
 <script setup>
 import { ref } from 'vue'
 import { onMounted } from '@vue/runtime-core'
-import axios from 'axios'
 import { useRouter } from 'vue-router'
+import axios from 'axios'
+
 const router = useRouter()
-const tableData = ref([])
-const getData = async () => {
+const tableData = ref([]) // 表格数据
+const getData = async () => { // 获取表格数据
   const { data } = await axios.get('/static/LeetCodeData/LeetCodeData.json')
   tableData.value = data
 }
@@ -31,10 +32,10 @@ onMounted(() => {
   getData()
 })
 
-const seeDetal = (val) => {
+const seeDetal = (val) => { // 跳转去详情
   router.push({ name: 'LeetCodeDetails', query: { path: val.path } })
 }
-const calcDifficulty = (row) => {
+const calcDifficulty = (row) => { // 返回文字颜色
   const m = new Map([
     ['简单', '#00b42a'],
     ['中等', '#ff7d00'],

@@ -13,11 +13,12 @@
       <a-layout-header class="app_header" style="padding-left: 20px;">
         <HeaderBread />
       </a-layout-header>
-      <a-layout class="h-[calc(100vh-64px)] overflow-y-auto p-24px">
+      <a-layout class="h-[calc(100vh-64px)] overflow-y-auto p-24px pb-0">
         <a-layout-content>
           <LayoutMain />
         </a-layout-content>
-        <a-layout-footer>Footer</a-layout-footer>
+        <LayoutFooter />
+
       </a-layout>
     </a-layout>
   </a-layout>
@@ -25,6 +26,7 @@
 <script setup>
 import HeaderBread from './components/HeaderBread.vue'
 import LayoutMain from './components/LayoutMain.vue'
+import LayoutFooter from './components/LayoutFooter.vue'
 import AsideMenu from './components/AsideMenu.vue'
 import { IconCaretRight, IconCaretLeft } from '@arco-design/web-vue/es/icon'
 

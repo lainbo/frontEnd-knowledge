@@ -6,17 +6,18 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import axios from 'axios'
 import { useRoute } from 'vue-router'
+import axios from 'axios'
+
 const route = useRoute()
-const articleContent = ref('')
-const getData = async (query) => {
+const articleContent = ref('') // 文章内容
+const getData = async (query) => { // 获取文章内容
   const { data } = await axios.get(`/static/markdown${query.path}`)
   articleContent.value = data
 }
 onMounted(() => {
   const query = route.query
-  getData(query)
+  query && getData(query)
 })
 </script>
 

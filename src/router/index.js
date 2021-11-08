@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+
 const Layout = () => import('@/views/Layout/index.vue')
 const WelcomePage = () => import('@/views/WelcomePage.vue')
 const KnowLedgeList = () => import('@/views/Knowledge/KnowLedgeList.vue')
