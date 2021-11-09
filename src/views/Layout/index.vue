@@ -1,13 +1,13 @@
 <template>
   <a-layout class="layout-d">
-    <a-layout-sider collapsible breakpoint="xl">
-      <div class="logo" />
-      <AsideMenu />
-      <!-- trigger -->
-      <template #trigger="{ collapsed }">
-        <IconCaretRight v-if="collapsed" />
-        <IconCaretLeft v-else />
-      </template>
+    <a-layout-sider>
+      <div class="flex flex-col justify-between h-full">
+        <div>
+          <div class="logo" />
+          <AsideMenu />
+        </div>
+        <lottie :height="200" :options="defaultOptions" :defaultSlot="false" ref="lottie" />
+      </div>
     </a-layout-sider>
     <a-layout>
       <a-layout-header class="app_header" style="padding-left: 20px;">
@@ -28,7 +28,13 @@ import HeaderBread from './components/HeaderBread.vue'
 import LayoutMain from './components/LayoutMain.vue'
 import LayoutFooter from './components/LayoutFooter.vue'
 import AsideMenu from './components/AsideMenu.vue'
-import { IconCaretRight, IconCaretLeft } from '@arco-design/web-vue/es/icon'
+import { ref } from '@vue/reactivity'
+import Lottie from '~@comp/LottieItem.vue'
+import data from '~@assets/lottieData/Sunflower.json'
+const defaultOptions = ref({
+  animationData: data
+})
+// import { IconCaretRight, IconCaretLeft } from '@arco-design/web-vue/es/icon'
 
 </script>
 <style scoped>
