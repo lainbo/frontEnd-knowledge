@@ -13,12 +13,12 @@
       <a-layout-header class="app_header" style="padding-left: 20px;">
         <HeaderBread />
       </a-layout-header>
-      <a-layout class="h-[calc(100vh-64px)] overflow-y-auto p-24px pb-0">
-        <a-layout-content>
+      <a-layout id="customer_content" class="h-[calc(100vh-64px)] overflow-y-auto p-24px pb-0">
+        <a-layout-content class="!p-0">
           <LayoutMain />
         </a-layout-content>
         <LayoutFooter />
-
+        <a-back-top target-container="#customer_content" :style="{position:'absolute'}" />
       </a-layout>
     </a-layout>
   </a-layout>

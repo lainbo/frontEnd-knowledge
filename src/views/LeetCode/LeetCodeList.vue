@@ -1,5 +1,5 @@
 <template>
-  <div class="table_wrapper">
+  <div class="table_wrapper customer_card">
     <a-table :data="tableData" :pagination="false" @row-click="seeDetal">
       <template #columns>
         <a-table-column title="序号" dataIndex="num" width="80" />

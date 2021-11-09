@@ -5,3 +5,8 @@
 .arco-modal-wrapper {
   z-index: 6000;
 }
+
+.vuepress-markdown-body {
+  border-radius: 8px;
+  background-color: transparent !important;
+}
