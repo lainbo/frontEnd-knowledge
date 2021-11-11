@@ -16,10 +16,10 @@
   dependencies:
     color "^3.1.3"
 
-"@arco-design/web-vue@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmmirror.com/@arco-design/web-vue/download/@arco-design/web-vue-2.1.0.tgz#795630bd183f3be91afe324261f5620c514439c7"
-  integrity sha1-eVYwvRg/O+ka/jJCYfViDFFEOcc=
+"@arco-design/web-vue@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmmirror.com/@arco-design/web-vue/download/@arco-design/web-vue-2.2.0.tgz#eb19b6dd6aa875b18a46656a9946bb5f29be3a61"
+  integrity sha512-Bbj6dXQVGvUHc27tZg3EToopvXOJGWUJvi5IJXUNpbZxYuJFDLffkuu41ksIooMxvK/9SoG74Jbu8Fo+X93wwQ==
   dependencies:
     "@arco-design/color" "^0.4.0"
     b-tween "^0.3.3"
@@ -337,27 +337,27 @@
     toml "^3.0.0"
     upath "^1.1.0"
 
-"@windicss/config@1.4.12":
-  version "1.4.12"
-  resolved "https://registry.npmmirror.com/@windicss/config/download/@windicss/config-1.4.12.tgz#32842fe009b64176b004c83a93c5189066042c33"
-  integrity sha1-MoQv4Am2QXawBMg6k8UYkGYELDM=
+"@windicss/config@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.npmmirror.com/@windicss/config/download/@windicss/config-1.5.1.tgz#e3fdaddfc553442c85f67f2e9290ef46ce87b3a1"
+  integrity sha1-4/2t38VTRCyF9n8ukpDvRs6Hs6E=
   dependencies:
     debug "^4.3.2"
     jiti "^1.12.9"
-    windicss "^3.1.9"
+    windicss "^3.2.1"
 
-"@windicss/plugin-utils@1.4.12":
-  version "1.4.12"
-  resolved "https://registry.npmmirror.com/@windicss/plugin-utils/download/@windicss/plugin-utils-1.4.12.tgz#9929369018c8660ee2f218c47cfa4b83f5174c59"
-  integrity sha1-mSk2kBjIZg7i8hjEfPpLg/UXTFk=
+"@windicss/plugin-utils@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.npmmirror.com/@windicss/plugin-utils/download/@windicss/plugin-utils-1.5.1.tgz#9750bb72e8c14585e011d46a33351d47d8519e31"
+  integrity sha1-l1C7cujBRYXgEdRqMzUdR9hRnjE=
   dependencies:
     "@antfu/utils" "^0.3.0"
-    "@windicss/config" "1.4.12"
+    "@windicss/config" "1.5.1"
     debug "^4.3.2"
     fast-glob "^3.2.7"
     magic-string "^0.25.7"
     micromatch "^4.0.4"
-    windicss "^3.1.9"
+    windicss "^3.2.1"
 
 acorn-jsx@^5.3.1:
   version "5.3.2"
@@ -1573,9 +1573,9 @@ eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-module-utils@^2.7.0:
+eslint-module-utils@^2.7.1:
   version "2.7.1"
-  resolved "https://registry.npmmirror.com/eslint-module-utils/download/eslint-module-utils-2.7.1.tgz#b435001c9f8dd4ab7f6d0efcae4b9696d4c24b7c"
+  resolved "https://registry.npmmirror.com/eslint-module-utils/download/eslint-module-utils-2.7.1.tgz?cache=0&sync_timestamp=1634151692261&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-module-utils%2Fdownload%2Feslint-module-utils-2.7.1.tgz#b435001c9f8dd4ab7f6d0efcae4b9696d4c24b7c"
   integrity sha1-tDUAHJ+N1Kt/bQ78rkuWltTCS3w=
   dependencies:
     debug "^3.2.7"
@@ -1590,19 +1590,19 @@ eslint-plugin-es@^3.0.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
-eslint-plugin-import@^2.25.2:
-  version "2.25.2"
-  resolved "https://registry.npmmirror.com/eslint-plugin-import/download/eslint-plugin-import-2.25.2.tgz#b3b9160efddb702fc1636659e71ba1d10adbe9e9"
-  integrity sha1-s7kWDv3bcC/BY2ZZ5xuh0Qrb6ek=
+eslint-plugin-import@^2.25.3:
+  version "2.25.3"
+  resolved "https://registry.npmmirror.com/eslint-plugin-import/download/eslint-plugin-import-2.25.3.tgz?cache=0&sync_timestamp=1636529216632&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-plugin-import%2Fdownload%2Feslint-plugin-import-2.25.3.tgz#a554b5f66e08fb4f6dc99221866e57cfff824766"
+  integrity sha512-RzAVbby+72IB3iOEL8clzPLzL3wpDrlwjsTBAQXgyp5SeTqqY+0bFubwuo+y/HLhNZcXV4XqTBO4LGsfyHIDXg==
   dependencies:
     array-includes "^3.1.4"
     array.prototype.flat "^1.2.5"
     debug "^2.6.9"
     doctrine "^2.1.0"
     eslint-import-resolver-node "^0.3.6"
-    eslint-module-utils "^2.7.0"
+    eslint-module-utils "^2.7.1"
     has "^1.0.3"
-    is-core-module "^2.7.0"
+    is-core-module "^2.8.0"
     is-glob "^4.0.3"
     minimatch "^3.0.4"
     object.values "^1.1.5"
@@ -2253,7 +2253,7 @@ is-callable@^1.1.4, is-callable@^1.2.4:
   resolved "https://registry.nlark.com/is-callable/download/is-callable-1.2.4.tgz#47301d58dd0259407865547853df6d61fe471945"
   integrity sha1-RzAdWN0CWUB4ZVR4U99tYf5HGUU=
 
-is-core-module@^2.2.0, is-core-module@^2.7.0:
+is-core-module@^2.2.0, is-core-module@^2.8.0:
   version "2.8.0"
   resolved "https://registry.npmmirror.com/is-core-module/download/is-core-module-2.8.0.tgz?cache=0&sync_timestamp=1634236731601&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fis-core-module%2Fdownload%2Fis-core-module-2.8.0.tgz#0321336c3d0925e497fd97f5d95cb114a5ccd548"
   integrity sha1-AyEzbD0JJeSX/Zf12VyxFKXM1Ug=
@@ -2570,10 +2570,10 @@ lodash@^4.17.15, lodash@^4.17.21:
   resolved "https://registry.nlark.com/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
 
-lottie-web@^5.8.0:
-  version "5.8.0"
-  resolved "https://registry.npmmirror.com/lottie-web/download/lottie-web-5.8.0.tgz#0137e883b46da8669b80a06f5971112d6ee9b2cb"
-  integrity sha512-MieQQXm1TvRfsa0IEqd+R9EZ+2IxKHETOh6tuooP526BF42BrPtrA1oIPOWatNinB9eIaUzN40ZWD0TjyQz5Yw==
+lottie-web@^5.8.1:
+  version "5.8.1"
+  resolved "https://registry.npmmirror.com/lottie-web/download/lottie-web-5.8.1.tgz#807e0af0ad22b59bf867d964eb684cb3368da0ef"
+  integrity sha512-9gIizWADlaHC2GCt+D+yNpk5l2clZQFqnVWWIVdY0LnxC/uLa39dYltAe3fcmC/hrZ2IUQ8dLlY0O934Npjs7Q==
 
 lru-cache@^6.0.0:
   version "6.0.0"
@@ -3494,20 +3494,20 @@ vant@^3.1.3:
     "@vant/popperjs" "^1.1.0"
     "@vant/use" "^1.3.2"
 
-vite-plugin-windicss@^1.4.12:
-  version "1.4.12"
-  resolved "https://registry.npmmirror.com/vite-plugin-windicss/download/vite-plugin-windicss-1.4.12.tgz#a301fd554425042b5fdaec562bd11a5a0fcbf178"
-  integrity sha1-owH9VUQlBCtf2uxWK9EaWg/L8Xg=
+vite-plugin-windicss@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npmmirror.com/vite-plugin-windicss/download/vite-plugin-windicss-1.5.1.tgz#bf15165da15cacadc3cdb8cc1a61d287cef2dc75"
+  integrity sha1-vxUWXaFcrK3DzbjMGmHSh87y3HU=
   dependencies:
-    "@windicss/plugin-utils" "1.4.12"
+    "@windicss/plugin-utils" "1.5.1"
     chalk "^4.1.2"
     debug "^4.3.2"
-    windicss "^3.1.9"
+    windicss "^3.2.1"
 
-vite@^2.6.4:
-  version "2.6.13"
-  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.13.tgz?cache=0&sync_timestamp=1635502405725&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvite%2Fdownload%2Fvite-2.6.13.tgz#16b3ec85a66d5b461ac29a903874d4357f9af432"
-  integrity sha1-FrPshaZtW0YawpqQOHTUNX+a9DI=
+vite@^2.6.14:
+  version "2.6.14"
+  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.14.tgz?cache=0&sync_timestamp=1636491769573&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvite%2Fdownload%2Fvite-2.6.14.tgz#35c09a15e4df823410819a2a239ab11efb186271"
+  integrity sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==
   dependencies:
     esbuild "^0.13.2"
     postcss "^8.3.8"
@@ -3573,10 +3573,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-windicss@^3.1.9, windicss@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmmirror.com/windicss/download/windicss-3.2.0.tgz#d779cface09afafa4c31e41f9c229db3d66b5807"
-  integrity sha1-13nPrOCa+vpMMeQfnCKds9ZrWAc=
+windicss@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.npmmirror.com/windicss/download/windicss-3.2.1.tgz#bd0f7b9ebabba04ea8dfedcbb0263c2ef9591db4"
+  integrity sha1-vQ97nrq7oE6o3+3LsCY8LvlZHbQ=
 
 word-wrap@^1.2.3:
   version "1.2.3"

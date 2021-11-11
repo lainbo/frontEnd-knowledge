@@ -6,7 +6,10 @@
           <div class="logo" />
           <AsideMenu />
         </div>
-        <lottie :height="200" :options="defaultOptions" :defaultSlot="false" ref="lottie" />
+        <div class="relative lottie_wrapper">
+
+          <lottie :height="200" :options="defaultOptions" :defaultSlot="false" ref="lottie" />
+        </div>
       </div>
     </a-layout-sider>
     <a-layout>
@@ -37,7 +40,17 @@ const defaultOptions = ref({
 // import { IconCaretRight, IconCaretLeft } from '@arco-design/web-vue/es/icon'
 
 </script>
-<style scoped>
+<style lang="scss" scoped>
+.lottie_wrapper {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(to top, #fff0 0%, #fff 100%);
+  }
+}
 .app_header {
   box-shadow: 0 1px 4px #0015291f;
   z-index: 2000;
