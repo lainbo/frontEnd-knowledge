@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const Layout = () => import('@/views/Layout/index.vue')
-const WelcomePage = () => import('@/views/WelcomePage.vue')
+const WelcomePage = () => import('@/views/Home/WelcomePage.vue')
 const KnowLedgeList = () => import('@/views/Knowledge/KnowLedgeList.vue')
 const LeetCodeList = () => import('@/views/LeetCode/LeetCodeList.vue')
 const LeetCodeDetails = () => import('@/views/LeetCode/LeetCodeDetails.vue')
