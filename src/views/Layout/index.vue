@@ -3,12 +3,11 @@
     <a-layout-sider>
       <div class="flex flex-col justify-between h-full">
         <div>
-          <div class="logo" />
+          <div class="logo relative overflow-hidden p-8px">
+            <lottie class="absolute -left-1/2 top-1/2 transform -translate-y-1/2 translate-x-1/5"
+              :height="100" :options="logoDefaultOptions" ref="lottie" />
+          </div>
           <AsideMenu />
-        </div>
-        <div class="relative lottie_wrapper">
-
-          <lottie :height="200" :options="defaultOptions" :defaultSlot="false" ref="lottie" />
         </div>
       </div>
     </a-layout-sider>
@@ -32,10 +31,11 @@ import LayoutMain from './components/LayoutMain.vue'
 import LayoutFooter from './components/LayoutFooter.vue'
 import AsideMenu from './components/AsideMenu.vue'
 import { ref } from '@vue/reactivity'
+import logoData from '~@assets/lottieData/LogoData.json'
 import Lottie from '~@comp/LottieItem.vue'
-import data from '~@assets/lottieData/Sunflower.json'
-const defaultOptions = ref({
-  animationData: data
+const logoDefaultOptions = ref({
+  // loop: false,
+  animationData: logoData
 })
 // import { IconCaretRight, IconCaretLeft } from '@arco-design/web-vue/es/icon'
 
@@ -61,13 +61,11 @@ const defaultOptions = ref({
   border: 1px solid var(--color-border);
 }
 .layout-d :deep(.arco-layout-sider) .logo {
-  height: 32px;
-  margin: 12px 8px;
-  background: rgba(255, 255, 255, 0.2);
+  height: 64px;
 }
-.layout-d :deep(.arco-layout-sider-light) .logo {
-  background: var(--color-fill-2);
-}
+// .layout-d :deep(.arco-layout-sider-light) .logo {
+//   background: var(--color-fill-2);
+// }
 .layout-d :deep(.arco-layout-header) {
   height: 64px;
   line-height: 64px;
