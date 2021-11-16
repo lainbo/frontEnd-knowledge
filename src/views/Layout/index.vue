@@ -3,9 +3,10 @@
     <a-layout-sider>
       <div class="flex flex-col justify-between h-full">
         <div>
-          <div class="logo relative overflow-hidden p-8px">
+          <div class="logo relative overflow-hidden p-8px cursor-pointer" @click="goHome">
             <lottie class="absolute -left-1/2 top-1/2 transform -translate-y-1/2 translate-x-1/5"
               :height="100" :options="logoDefaultOptions" ref="lottie" />
+            <span class="absolute left-75px top-1/2 transform -translate-y-1/2"></span>
           </div>
           <AsideMenu />
         </div>
@@ -33,11 +34,16 @@ import AsideMenu from './components/AsideMenu.vue'
 import { ref } from '@vue/reactivity'
 import logoData from '~@assets/lottieData/LogoData.json'
 import Lottie from '~@comp/LottieItem.vue'
+import { useRouter } from 'vue-router'
+const router = useRouter()
+
 const logoDefaultOptions = ref({
-  // loop: false,
   animationData: logoData
 })
-// import { IconCaretRight, IconCaretLeft } from '@arco-design/web-vue/es/icon'
+
+const goHome = () => {
+  router.push({ name: 'WelcomePage' })
+}
 
 </script>
 <style lang="scss" scoped>
