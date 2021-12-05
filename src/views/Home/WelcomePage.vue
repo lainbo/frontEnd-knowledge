@@ -1,6 +1,7 @@
 <template>
   <div class="h-full">
-    <div class="container">
+    <div
+      class="home_container flex justify-center items-center flex-col text-[#666] h-full transition-all">
       <div class="date-box">
         {{dateStr}}
       </div>
@@ -78,9 +79,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  @include flex_center;
-  @apply flex-col text-[#666] h-full transition-all;
+.home_container {
   text-shadow: -1px 4px 6px #00000030;
 }
 
@@ -118,7 +117,6 @@ onBeforeUnmount(() => {
 
 .hour-hand {
   @apply w-0 h-0 absolute z-1 top-1/2 left-1/2 bg-[#666];
-
   margin: -4px 0 -4px -25%;
   padding: 4px 0 4px 25%;
   transform-origin: 100% 50%;
