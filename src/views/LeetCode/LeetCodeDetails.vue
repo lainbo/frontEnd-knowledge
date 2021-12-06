@@ -3,7 +3,7 @@
     <div @click="goList"
       class="cursor-pointer pl-16px space-x-8px inline-flex items-center leading-40px rounded-l-full absolute right-0 top-22px pr-10px shadow-lg opacity-80 hover:opacity-100 hover:shadow-xl transition-all">
       <icon-left />
-      <span class="font-700 text-[#333]">返回列表</span>
+      <span class="font-700 text-[#333]">返回列 表</span>
     </div>
     <v-md-preview :text="articleContent"></v-md-preview>
 
