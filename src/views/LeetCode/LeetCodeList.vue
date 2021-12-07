@@ -2,13 +2,11 @@
   <div class="table_wrapper customer_card">
     <a-table :data="tableData" :pagination="false" @row-click="seeDetal">
       <template #columns>
-        <a-table-column title="序号" dataIndex="num" width="80" />
-        <a-table-column title="题目" dataIndex="name" />
-        <a-table-column title="难度" dataIndex="difficulty" width="100">
+        <a-table-column title="序号" data-index="num" width="80" />
+        <a-table-column title="题目" data-index="name" />
+        <a-table-column title="难度" data-index="difficulty" width="100">
           <template #cell="{ record }">
-            <span :style="{color:calcDifficulty(record)}">
-              {{record.difficulty}}
-            </span>
+            <span :style="{ color: calcDifficulty(record) }">{{ record.difficulty }}</span>
           </template>
         </a-table-column>
       </template>

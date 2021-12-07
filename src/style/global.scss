@@ -34,20 +34,20 @@ input:-webkit-autofill {
 
 
 // routerView过渡效果
-.fade-enter-active {
+.pageTransition-enter-active {
   transition: all 0.27s ease;
 }
 
-.fade-leave-active {
+.pageTransition-leave-active {
   transition: all 0.12s ease;
 }
 
-.fade-enter-from {
+.pageTransition-enter-from {
   opacity: 0;
   transform: translateX(-15px);
 }
 
-.fade-leave-active {
+.pageTransition-leave-active {
   opacity: 0;
   transform: translateX(15px);
 }
