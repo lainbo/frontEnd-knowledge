@@ -30,5 +30,11 @@ export default defineConfig({
       '~@style': resolve(__dirname, './src/style'),
       '~@views': resolve(__dirname, './src/views')
     }
+  },
+  build: {
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    minify: 'terser'
   }
 })
