@@ -59,7 +59,7 @@ const setDate = () => { // 时钟转动
     ? 'all 0s'
     : 'all 0.05s cubic-bezier(0.9, 0.54, 0.26, 1.68)'
 
-  minHand.value.style.transition = minDeg === 90
+  minHand.value.style.transition = minDeg.value === 90
     ? 'all 0s'
     : 'all 0.1s cubic-bezier(0.9, 0.54, 0.26, 1.68)'
 }
